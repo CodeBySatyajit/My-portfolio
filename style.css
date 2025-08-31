@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", "roboto", "Arial", "Helvetica";
+}
+
+body {
+  background: #f5f7fa;
+  color: #22223b;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-div h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.more-info {
+  font-size: 0.8rem;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
