@@ -1,6 +1,6 @@
-let icon = document.querySelector(".bars-icon");
-let ul = document.querySelector("ul");
-let a = document.querySelectorAll("a");
+const icon = document.querySelector(".bars-icon");
+const ul = document.querySelector("ul");
+const a = document.querySelectorAll("a");
 
 icon.addEventListener("click", () => {
   ul.classList.toggle("showData");
@@ -12,7 +12,7 @@ icon.addEventListener("click", () => {
   }
 });
 
-a.forEach(anchor => {
+a.forEach((anchor) => {
   anchor.addEventListener("click", () => {
     ul.classList.remove("showData");
     document.getElementById("bar").className = "fa-solid fa-bars";
