@@ -10,6 +10,8 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* style to sections headings of portfolio website  */
+
 .text-div {
   display: flex;
   justify-content: center;
@@ -34,6 +36,8 @@ header {
   position: sticky;
   top: 0;
 }
+
+/* style the scrolling behavior after the clicking on navbar links or footer links */
 
 html {
   scroll-behavior: smooth;
