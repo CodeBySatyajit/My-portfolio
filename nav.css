@@ -67,6 +67,8 @@
   outline: none;
 }
 
+/* show a vertical menu when clicked on bars icon */
+
 .showData {
   display: flex !important;
   flex-direction: column;
