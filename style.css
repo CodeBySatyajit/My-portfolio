@@ -4,6 +4,11 @@
   font-family: "poppins", "roboto", "Arial", "Helvetica";
 }
 
+:root{
+  --background-color: #000428;
+  --background:linear-gradient(90deg, #000428 0%, #004e92 100%);
+}
+
 body {
   background: #f5f7fa;
   color: #22223b;

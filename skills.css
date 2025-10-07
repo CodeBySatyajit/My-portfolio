@@ -1,7 +1,11 @@
 .skills-section {
-  background-color: rgb(0, 27, 103);
-  color: white;
-  padding: 50px 0px 50px 0px;
+  /* fallback color for old browsers */
+  background-color: var(--background-color);
+
+  /* correct usage of gradient */
+  background: var(--background);
+  color: #fff;
+  padding: 50px 0;
 }
 
 .skills {
