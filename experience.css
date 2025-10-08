@@ -55,8 +55,9 @@ h5 {
   font-size: 0.8rem;
   text-wrap: wrap;
   padding: 0px 30px 0px 30px;
-  color: rgb(206, 197, 22);
+  color: var(--text-color);
   text-align: center;
+  
 }
 
 @media (max-width: 500px) {

@@ -7,6 +7,7 @@
 :root{
   --background-color: #000428;
   --background:linear-gradient(90deg, #000428 0%, #004e92 100%);
+  --text-color: rgba(255, 174, 0, 0.767);
 }
 
 body {
