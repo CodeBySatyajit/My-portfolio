@@ -3,18 +3,26 @@
   justify-content: space-evenly;
   height: 60px;
   align-items: center;
+  left: 50%;
+  /* remove transform to avoid creating a new stacking context, or keep but use fixed for dropdown */
+  transform: translateX(-50%);
   color: white;
-  background-color: #2563eb;
+  background-color: rgba(0, 0, 0, 0.33);
+  position: fixed;
+  margin-top: 30px;
+  width: 80vw;
+  border-radius: 40px;
+  z-index: 1000;
 }
 
 .nav-list a {
   margin-left: 30px;
   text-decoration: none;
   color: white;
- 
+
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
   background-color: hsla(0, 0%, 100%, 0.33);
   backdrop-filter: blur(20px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.304);
@@ -42,21 +50,19 @@
   font-size: 0.9rem;
 }
 
-
-
 .bars-icon {
   font-size: 20px;
   display: none;
   cursor: pointer;
 }
 
-@media (max-width: 710px) {
+@media (max-width: 840px) {
   .left-nav {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .right-nav {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .nav-list a {
@@ -64,15 +70,23 @@
   }
 
   .nav {
-    height: 40px;
+    height: 50px;
   }
 }
 
 .left-nav p {
   font-weight: bolder;
-  background-image: linear-gradient(rgb(238, 255, 0), rgb(255, 0, 0));
+  background-image: linear-gradient(90deg, #eeff00, #ff0000);
   color: transparent;
+  /* fallback */
+  -webkit-background-clip: text;
+  /* Chrome / Safari */
   background-clip: text;
+  /* standard */
+  -webkit-text-fill-color: transparent;
+  /* ensure transparency on WebKit */
+  display: inline-block;
+  /* required for reliable clipping */
   outline: none;
 }
 
@@ -83,19 +97,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0px;
-  top: 40px;
-  width: 100vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  width: 85vw;
   height: 300px;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.33) !important;
+  backdrop-filter: blur(8px) !important;
+  z-index: 1100;
 }
 
-@media only screen and (max-width: 460px) {
+.showData a {
+  font-size: 1rem !important;
+}
+
+@media only screen and (max-width: 530px) {
   .nav-list ul {
     display: none;
   }
+
   .bars-icon {
     display: flex;
   }
@@ -104,9 +126,17 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
+
   }
 
   .nav-list a {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .nav-list a {
+    font-size: 0.6rem;
+    margin-left: 10px;
   }
 }
